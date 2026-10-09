@@ -1,0 +1,22 @@
+name: Mint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  mint:
+    name: mint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: opsdevcode/mint-action@29918519e95b10eec7cbc3ffd253d7c5286599f6 # immutable merge SHA of mint-action#1
+        with:
+          project: .
+          command: check
+          language-tag: v0.7.0-alpha.2
+          language-wheel: specmint-0.7.0a2-py3-none-any.whl
