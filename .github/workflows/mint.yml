@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: opsdevcode/mint-action@2bce4809af9a1cfcad41f1f7e24b558dcb1e1445 # cursor/mint-action-325c until main merges
+      - uses: opsdevcode/mint-action@b562139f2ebf442d3c28f076ee6a3f93ddff34e2 # cursor/mint-action-325c until main merges
         with:
           project: .
           command: check
