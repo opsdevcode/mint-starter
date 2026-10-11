@@ -10,9 +10,9 @@ governance example. There is no `mint apply` and no live GitHub mutation.
 1. Use this repository as a template (or clone it).
 2. Keep `.github/workflows/mint.yml`. It calls
    `opsdevcode/mint-action` on `pull_request` with `contents: read`.
-3. Open a pull request. CI installs Mint `v0.7.0-alpha.2` /
-   `specmint==0.7.0a2` from the GitHub Release wheel after `SHA256SUMS`.
-4. Locally: `pipx install specmint==0.7.0a2` then
+3. Open a pull request. CI installs Mint `v0.8.0-alpha.2` /
+   `specmint==0.8.0a2` from the GitHub Release wheel after `SHA256SUMS`.
+4. Locally: `pipx install specmint==0.8.0a2` then
    `mint check --project .` and `mint plan --project . --locked`.
 
 The starter may stay untagged. Pin the language release; there is no
@@ -34,8 +34,8 @@ Execute is refused. Do not pass a PAT.
 
 | Surface | Coordinate |
 | --- | --- |
-| Language | `v0.7.0-alpha.2` / `0.7.0a2` |
-| Action | `opsdevcode/mint-action` (commit pin in the workflow) |
+| Language | `v0.8.0-alpha.2` / `0.8.0a2` |
+| Action | `opsdevcode/mint-action@2b35bb6a2da3f7f7e41254700aa030b3c18bfd1d` (`v0.2.0-alpha.0` comment only) |
 | GitHub integration | `v0.3.0-alpha.1` (plan-only wheel, not PyPI) |
 | Local integration | `v0.2.1-alpha.1` |
 

@@ -36,5 +36,5 @@
   "provenance": {
     "synthesize": false
   },
-  "notes": "Public template. Stays untagged. Pin mint-action by merge SHA 29918519, never @main. Language wheel from GitHub Release, never latest."
+  "notes": "Public template. Stays untagged. Pin mint-action by SHA 2b35bb6a2da3f7f7e41254700aa030b3c18bfd1d (v0.2.0-alpha.0 comment only), never @main/@v1/@latest. Language wheel from GitHub Release, never latest."
 }
