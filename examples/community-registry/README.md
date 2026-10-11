@@ -1,9 +1,10 @@
 # Community registry demo
 
-This example shows how to cache official Mint catalog records from a
-local `opsdevcode/mint-registry` checkout. It does not pip-install or
-execute an integration. CI still runs `mint check` on the starter
-project; this directory is documentation plus static JSON.
+This example shows how to cache official Mint catalog records from the
+immutable mint-registry snapshot `v0.2.0-alpha.0`. It does not
+pip-install or execute an integration. CI still runs `mint check` on
+the starter project; this directory is documentation plus static JSON.
+Do not follow registry `main` or `/releases/latest`.
 
 ## Records
 

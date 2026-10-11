@@ -10,9 +10,9 @@ governance example. There is no `mint apply` and no live GitHub mutation.
 1. Use this repository as a template (or clone it).
 2. Keep `.github/workflows/mint.yml`. It calls
    `opsdevcode/mint-action` on `pull_request` with `contents: read`.
-3. Open a pull request. CI installs Mint `v0.8.0-alpha.2` /
-   `specmint==0.8.0a2` from the GitHub Release wheel after `SHA256SUMS`.
-4. Locally: `pipx install specmint==0.8.0a2` then
+3. Open a pull request. CI installs Mint `v0.9.0-alpha.2` /
+   `specmint==0.9.0a2` from the GitHub Release wheel after `SHA256SUMS`.
+4. Locally: `pipx install specmint==0.9.0a2` then
    `mint check --project .` and `mint plan --project . --locked`.
 
 The starter may stay untagged. Pin the language release; there is no
@@ -21,9 +21,10 @@ The starter may stay untagged. Pin the language release; there is no
 ## Community registry demo
 
 `examples/community-registry` holds static `mint.catalog-records/v0`
-JSON for the official local and GitHub integrations. Cache it with
-`mint integrations update --registry examples/community-registry` after
-the language cache ADR lands. Discovery does not install.
+JSON matching mint-registry GitHub Release `v0.2.0-alpha.0` (not
+`main`, not `/releases/latest`). Cache it with
+`mint integrations update --registry examples/community-registry`.
+Discovery does not install.
 
 ## Governance example
 
@@ -41,8 +42,9 @@ Execute is refused. Do not pass a PAT.
 
 | Surface | Coordinate |
 | --- | --- |
-| Language | `v0.8.0-alpha.2` / `0.8.0a2` |
+| Language | `v0.9.0-alpha.2` / `0.9.0a2` |
 | Action | `opsdevcode/mint-action@2b35bb6a2da3f7f7e41254700aa030b3c18bfd1d` (`v0.2.0-alpha.0` comment only) |
+| Registry snapshot | `opsdevcode/mint-registry` `v0.2.0-alpha.0` |
 | GitHub integration | `v0.3.0-alpha.1` (plan-only wheel, not PyPI) |
 | Local integration | `v0.2.1-alpha.1` |
 

@@ -18,8 +18,8 @@ jobs:
         with:
           project: .
           command: check
-          language-tag: v0.8.0-alpha.2
-          language-wheel: specmint-0.8.0a2-py3-none-any.whl
+          language-tag: v0.9.0-alpha.2
+          language-wheel: specmint-0.9.0a2-py3-none-any.whl
       - name: Require native SARIF
         if: always()
         run: |
