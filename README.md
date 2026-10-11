@@ -18,6 +18,13 @@ governance example. There is no `mint apply` and no live GitHub mutation.
 The starter may stay untagged. Pin the language release; there is no
 `latest`.
 
+## Community registry demo
+
+`examples/community-registry` holds static `mint.catalog-records/v0`
+JSON for the official local and GitHub integrations. Cache it with
+`mint integrations update --registry examples/community-registry` after
+the language cache ADR lands. Discovery does not install.
+
 ## Governance example
 
 `examples/governance` is the language `repository-governance` project:
